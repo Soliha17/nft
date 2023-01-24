@@ -1,0 +1,289 @@
+@import "./sass/_variables.scss";
+
+/* =============== ADD FONTS =============== */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Bold.eot");
+  src: url("./fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Roboto-Bold.woff") format("woff"),
+    url("./fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.eot");
+  src: url("./fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Roboto-Regular.woff") format("woff"),
+    url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.eot");
+  src: url("./fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Poppins-Medium.woff") format("woff"),
+    url("./fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSans-Regular.eot");
+  src: url("./fonts/DMSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/DMSans-Regular.woff") format("woff"),
+    url("./fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSans-Medium.eot");
+  src: url("./fonts/DMSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/DMSans-Medium.woff") format("woff"),
+    url("./fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSans-Bold.eot");
+  src: url("./fonts/DMSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/DMSans-Bold.woff") format("woff"),
+    url("./fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----------- Responsive typography ----------- */
+@media screen and (max-width: 992px) {
+  $h1-font-size: 2.7rem;
+  $h2-font-size: 1.5rem;
+  $h3-font-size: 0.9rem;
+  $normal-font-size: 0.8rem;
+  $small-font-size: 0.75rem;
+  $smaller-font-size: 0.7rem;
+}
+
+/* =============== BASE =============== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $black;
+  background-color: $white;
+  font-family: $body-font;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1 {
+  color: $white;
+  font-size: $h1-font-size;
+  font-weight: $font-semi-bold;
+  line-height: 80px;
+}
+
+h2 {
+  color: $darkblue;
+  font-weight: $font-semi-bold;
+}
+
+h3 {
+  color: $white;
+  font-weight: $font-medium;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============== REUSABLE CSS CLASSES =============== */
+.section {
+  padding-top: 5.5rem;
+}
+
+.section__title {
+  font-size: $h2-font-size;
+  line-height: 60px;
+}
+
+.section__title span {
+  color: $red;
+}
+
+.section__subtitle {
+  font-size: $small-font-size;
+  line-height: 21px;
+  font-weight: $font-normal;
+}
+
+.section__paragraph {
+  font-weight: $font-normal;
+  font-size: $normal-font-size;
+  line-height: 30px;
+}
+
+/* =============== REUSABLE FONT CSS CLASSES =============== */
+
+.font-style--1210 {
+  font-weight: $font-normal;
+  font-size: $tiny-font-size;
+  line-height: 10px;
+}
+.font-style--1220 {
+  font-weight: $font-normal;
+  font-size: $tiny-font-size;
+  line-height: 20px;
+}
+.font-style--1225 {
+  font-weight: $font-normal;
+  font-size: $tiny-font-size;
+  line-height: 25px;
+}
+.font-style--1420 {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.font-style--1525 {
+  font-weight: $font-normal;
+  font-size: $smaller-font-size;
+  line-height: 25px;
+}
+.font-style--1619 {
+  font-weight: $font-normal;
+  font-size: $small-font-size;
+  line-height: 19px;
+}
+.font-style--1625 {
+  font-weight: $font-normal;
+  font-size: $small-font-size;
+  line-height: 25px;
+}
+.font-style--1630 {
+  font-weight: $font-normal;
+  font-size: $small-font-size;
+  line-height: 30px;
+}
+.font-style--1821 {
+  font-weight: $font-normal;
+  font-size: $normal-font-size;
+  line-height: 21px;
+}
+.font-style--1823 {
+  font-weight: $font-normal;
+  font-size: $normal-font-size;
+  line-height: 23px;
+}
+.font-style--1830 {
+  font-weight: $font-normal;
+  font-size: $normal-font-size;
+  line-height: 30px;
+}
+.font-style--2030 {
+  font-weight: $font-medium;
+  font-size: $h3-font-size;
+  line-height: 30px;
+}
+
+/*=============== LAYOUT ===============*/
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: $gap;
+}
+
+.flex {
+  display: flex;
+  gap: $gap;
+}
+
+.footer {
+  margin-top: 5.5rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For large devices */
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 992px) {
+  // .container {
+  //   margin-left: var(--mb-1-5);
+  //   margin-right: var(--mb-1-5);
+  // }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  // body {
+  //   margin: 0 0 var(--header-height) 0;
+  // }
+
+  // .section {
+  //   padding: 2rem 0 4rem;
+  // }
+
+  // .section__subtitle {
+  //   margin-bottom: var(--mb-3);
+  // }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  // :root {
+  //   --big-font-size: 2.25rem;
+  // }
+
+  // .container {
+  //   margin-left: var(--mb-1);
+  //   margin-right: var(--mb-1);
+  // }
+}

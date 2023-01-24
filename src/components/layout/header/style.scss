@@ -1,0 +1,99 @@
+@import "../../../sass/variables.scss";
+
+.header {
+  display: flex;
+  font-family: "Roboto";
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(179, 211, 72);
+
+  .header__list--none {
+    display: none;
+  }
+
+  &__logo {
+    max-width: 174px;
+    img {
+      cursor: pointer;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+
+    .header__item {
+      .header__link {
+        color: $white;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          color: $red;
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background: $red;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $lightblue;
+      border-color: #7c898e;
+      background: transparent;
+    }
+  }
+
+  .hamburger__btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    position: relative;
+  }
+  .header__list {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 57px);
+    background: rgb(70, 151, 202);
+  }
+  .hamburger__btn {
+    display: block !important;
+    background: none;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .header__btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__logo {
+    img {
+      width: 150px;
+    }
+  }
+  .header__list {
+    top: 53px;
+  }
+}
