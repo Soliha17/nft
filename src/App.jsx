@@ -2,12 +2,12 @@ import React from 'react';
 
 import "./App.scss";
 
-import Header from './components/layout/header/Index';
+import Hero from './components/layout/hero/Index';
 
 function App() {
   return (
     <div className='app'>
-      <Header/>
+      <Hero/>
     </div>
   )
 }

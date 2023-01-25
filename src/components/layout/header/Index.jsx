@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./style.scss";
 
@@ -7,6 +7,10 @@ import Menu from "../../../assets/icons/menu-3.png";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(true);
+
+  useEffect(() => {
+    document.body.classList.toggle("no-scroll", mobileMenu === true);
+  }, [mobileMenu]);
 
   function showMenu() {
     setMobileMenu(!mobileMenu);
@@ -46,7 +50,7 @@ const Header = () => {
       </ul>
       <button className="header__btn font-style--1619">Start Collecting</button>
       <button className="hamburger__btn" onClick={showMenu}>
-        <img src={Menu} alt="" width="50" height="50" />
+        <img src={Menu} alt="menu icon" width="50" height="50" />
       </button>
     </header>
   );
