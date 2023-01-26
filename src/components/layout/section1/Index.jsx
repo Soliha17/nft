@@ -37,7 +37,7 @@ const Section1 = () => {
               except to obtain some advantage from it?
             </li>
             <li className="section-1__item font-style--1619">
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque...
+              Nam libero tempore, cum soluta nobis est eligendi optioas cumque...
             </li>
             <li className="section-1__item font-style--1619">
               choice is untrammelled and when nothing prevents our being.
