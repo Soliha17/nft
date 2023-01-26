@@ -1,7 +1,5 @@
 /* =============== VARIABLES CSS =============== */
-
 /* ========== Colors ========== */
-
 $white: #ffffff;
 $black: #000000;
 $red: #ff014f;
@@ -48,12 +46,4 @@ $z-tooltip: 10;
 $z-fixed: 100;
 $z-modal: 1000;
 
-/* ----------- Responsive typography ----------- */
-@media screen and (max-width: 992px) {
-  $h1-font-size: 2.7rem !important;
-  $h2-font-size: 1.5rem;
-  $h3-font-size: 0.9rem;
-  $normal-font-size: 0.8rem;
-  $small-font-size: 0.75rem;
-  $smaller-font-size: 0.7rem;
-}
+

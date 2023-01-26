@@ -100,7 +100,7 @@ button {
 
 h1 {
   color: $white;
-  font-size: $h1-font-size;
+  font-size: 3.5rem;
   font-weight: $font-semi-bold;
   line-height: 80px;
 }
@@ -129,7 +129,8 @@ a {
 }
 
 .section__title {
-  font-size: $h2-font-size;
+  text-align: center;
+  font-size: 2rem;
   line-height: 60px;
 }
 
@@ -138,78 +139,80 @@ a {
 }
 
 .section__subtitle {
-  font-size: $small-font-size;
+  text-align: center;
+  color: $red;
+  font-size: 0.8rem;
   line-height: 21px;
   font-weight: $font-normal;
 }
 
 .section__paragraph {
-  font-weight: $font-normal;
-  font-size: $normal-font-size;
+  font-size: 0.9rem;
   line-height: 30px;
+  font-weight: $font-normal;
 }
 
 /* =============== REUSABLE FONT CSS CLASSES =============== */
 
 .font-style--1210 {
-  font-weight: $font-normal;
-  font-size: $tiny-font-size;
+  font-size: 0.6rem;
   line-height: 10px;
+  font-weight: $font-normal;
 }
 .font-style--1220 {
-  font-weight: $font-normal;
-  font-size: $tiny-font-size;
+  font-size: 0.6rem;
   line-height: 20px;
+  font-weight: $font-normal;
 }
 .font-style--1225 {
-  font-weight: $font-normal;
-  font-size: $tiny-font-size;
+  font-size: 0.6rem;
   line-height: 25px;
+  font-weight: $font-normal;
 }
 .font-style--1420 {
-  font-weight: $font-normal;
-  font-size: 14px;
+  font-size: 0.7rem;
   line-height: 20px;
+  font-weight: $font-normal;
 }
 .font-style--1525 {
-  font-weight: $font-normal;
-  font-size: $smaller-font-size;
+  font-size: 0.75rem;
   line-height: 25px;
+  font-weight: $font-normal;
 }
 .font-style--1619 {
-  font-weight: $font-normal;
-  font-size: $small-font-size;
+  font-size: 0.8rem;
   line-height: 19px;
+  font-weight: $font-normal;
 }
 .font-style--1625 {
-  font-weight: $font-normal;
-  font-size: $small-font-size;
+  font-size: 0.8rem;
   line-height: 25px;
+  font-weight: $font-normal;
 }
 .font-style--1630 {
-  font-weight: $font-normal;
-  font-size: $small-font-size;
+  font-size: 0.8rem;
   line-height: 30px;
+  font-weight: $font-normal;
 }
 .font-style--1821 {
-  font-weight: $font-normal;
-  font-size: $normal-font-size;
+  font-size: 0.9rem;
   line-height: 21px;
+  font-weight: $font-normal;
 }
 .font-style--1823 {
-  font-weight: $font-normal;
-  font-size: $normal-font-size;
+  font-size: 0.9rem;
   line-height: 23px;
+  font-weight: $font-normal;
 }
 .font-style--1830 {
-  font-weight: $font-normal;
-  font-size: $normal-font-size;
+  font-size: 0.9rem;
   line-height: 30px;
+  font-weight: $font-normal;
 }
 .font-style--2030 {
-  font-weight: $font-medium;
-  font-size: $h3-font-size;
+  font-size: 1rem;
   line-height: 30px;
+  font-weight: $font-medium;
 }
 
 /*=============== LAYOUT ===============*/

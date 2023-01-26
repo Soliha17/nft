@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./style.scss";
 
 import Logo from "../../../assets/images/logo.svg";
-import Menu from "../../../assets/icons/menu-3.png";
+import Menu from "../../../assets/icons/menu-1.png";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(true);
@@ -50,7 +50,7 @@ const Header = () => {
       </ul>
       <button className="header__btn font-style--1619">Start Collecting</button>
       <button className="hamburger__btn" onClick={showMenu}>
-        <img src={Menu} alt="menu icon" width="50" height="50" />
+        <img src={Menu} alt="menu icon" />
       </button>
     </header>
   );
