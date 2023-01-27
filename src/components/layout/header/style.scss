@@ -6,10 +6,6 @@
   justify-content: space-between;
   align-items: center;
 
-  .header__list--none {
-    display: none;
-  }
-
   &__logo {
     max-width: 174px;
     img {
@@ -72,13 +68,23 @@
   .header__list {
     position: fixed;
     top: 100px;
-    left: 0;
+    right: 0;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     height: calc(100vh - 57px);
     background: #473380;
     z-index: $z-tooltip;
+    transform: translateX(100%);
+    transition: 0.3s ease-in;
+  }
+
+  .header__list--active {
+    transform: translateX(0);
+  }
+
+  .header__list--none {
+    display: none;
   }
 
   .hamburger__btn {
@@ -93,6 +99,12 @@
 
   .header__btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__list {
+    width: 100%;
   }
 }
 

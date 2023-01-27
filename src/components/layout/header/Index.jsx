@@ -6,14 +6,16 @@ import Logo from "../../../assets/images/logo.svg";
 import Menu from "../../../assets/icons/menu-1.png";
 
 const Header = () => {
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState("header__list");
 
   useEffect(() => {
     document.body.classList.toggle("no-scroll", mobileMenu === true);
   }, [mobileMenu]);
 
   function showMenu() {
-    setMobileMenu(!mobileMenu);
+    mobileMenu === "header__list"
+      ? setMobileMenu("header__list header__list--active")
+      : setMobileMenu("header__list");
   }
 
   return (
@@ -21,7 +23,7 @@ const Header = () => {
       <div className="header__logo">
         <img src={Logo} alt="nft gallery logo" />
       </div>
-      <ul className={mobileMenu ? "header__list" : "header__list--none"}>
+      <ul className={mobileMenu}>
         <li className="header__item">
           <a href="" className="header__link font-style--1821">
             Home

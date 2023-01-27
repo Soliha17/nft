@@ -1,0 +1,39 @@
+@import "../../../sass/variables.scss";
+
+.collection {
+  padding-top: 7rem;
+
+  .section__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .section__title {
+    margin-bottom: 2.5rem;
+
+    span {
+      img {
+        width: 20px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .collection__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 210px;
+    height: 50px;
+    color: $white;
+    background: $red;
+    border-radius: 30px;
+  }
+
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn,
+  .alice-carousel__play-btn,
+  .alice-carousel__dots {
+    display: none;
+  }
+
+}
