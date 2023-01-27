@@ -8,7 +8,7 @@ import "./style.scss";
 
 import CardCollection from "../../molecules/CardCollection/Index";
 
-import { cardCollectionDatas } from "../../atoms/CardCollectionDatas";
+import { cardCollectionDatas } from "../../mock/CardCollectionDatas";
 
 import UnderVectorIcon from "../../../assets/icons/under-icon.svg";
 import Button from "../../atoms/button/Index";

@@ -3,7 +3,7 @@ import "./style.scss";
 
 import PhotoAlbum from "react-photo-album";
 
-import photos from "../../atoms/PhotosGalleryDatas";
+import photos from "../../mock/PhotosGalleryDatas";
 
 
 const Gallery = () => {

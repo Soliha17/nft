@@ -11,7 +11,7 @@ import {
   FourthCardCategoryPhotos,
   FifthCardCategoryPhotos,
   SixthCardCategoryPhotos,
-} from "../../atoms/PhotosCardCategory";
+} from "../../mock/PhotosCardCategory";
 
 import NextIcon from "../../../assets/icons/next-icon.svg";
 

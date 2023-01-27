@@ -2,6 +2,7 @@ import React from 'react';
 
 import "./App.scss";
 import About from './components/layout/about/Index';
+import Auction from './components/layout/auction/Index';
 import Category from './components/layout/category/Index';
 import Collection from './components/layout/collection/Index';
 import Gallery from './components/layout/gallery/Index';
@@ -15,7 +16,8 @@ function App() {
       <About />
       <Collection />
       <Gallery />
-      <Category/>
+      <Category />
+      <Auction/>
     </div>
   )
 }

@@ -1,0 +1,99 @@
+@import "../../../sass/variables.scss";
+
+.auction-card {
+  padding: 20px;
+  width: 370px;
+  background: $white;
+  border: 0.5px solid #e3e3e3;
+  box-shadow: 0px 0px 30px #dddddd;
+
+  .image-group__auction-card {
+    position: relative;
+
+    .bg-img__auction-card {
+      max-width: 330px;
+    }
+
+    .feed-img__auction-card {
+      max-width: 268px;
+      position: absolute;
+      bottom: 23px;
+      left: 30px;
+      border-radius: 8px;
+    }
+  }
+
+  .info-group__auction-card {
+    .top__info-group {
+      padding: 15px 0 13px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      p {
+        color: $red;
+      }
+    }
+
+    .middle__info-group{
+      display: flex;
+      justify-content: space-between;
+
+      .title__info-group{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+          width: 40px;
+        }
+
+        h5{
+          color: $blue;
+        }
+
+        p{
+          color: $darkgrey;
+        }
+      }
+
+      .cost__info-group{
+
+        p{
+          color: $darkgrey;
+        }
+
+        h6{
+          color: $blue;
+        }
+
+      }
+    }
+
+    .btn__auction-card{
+      display: block;
+      margin: 0 auto;
+      width: 270px;
+      height: 40px;
+      color: $darkgrey;
+      background: $white;
+      border-radius: 30px;
+      border: 1px solid $darkgrey;
+      transition: 0.3s ease;
+
+      &:hover{
+        color: $white;
+        border-color: $red;
+        background: $red;
+      }
+    }
+
+  }
+}
