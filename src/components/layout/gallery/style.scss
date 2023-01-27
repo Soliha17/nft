@@ -1,0 +1,21 @@
+.gallery {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .react-photo-album--column {
+    box-sizing: border-box;
+    img {
+      outline: 7px solid #000000;
+      outline-offset: -7px;
+    }
+  }
+}
