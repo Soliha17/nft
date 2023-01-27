@@ -1,0 +1,92 @@
+@import "../../../sass/variables.scss";
+
+.create {
+  .create-container {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    .create__left {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .create-card {
+        width: 243px;
+
+        img {
+          width: 80px;
+          margin-bottom: 20px;
+        }
+
+        h4 {
+          font-weight: 700;
+          color: $blue;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: $darkgrey;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .create__right {
+      img {
+        width: 561px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .create {
+    h2 {
+      text-align: center;
+    }
+
+    .create-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .create__left {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .create__right {
+    img {
+      max-width: 501px !important;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .create__right {
+    img {
+      max-width: 401px !important;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .create__right {
+    img {
+      max-width: 321px !important;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .create__right {
+    img {
+      max-width: 290px !important;
+    }
+  }
+}

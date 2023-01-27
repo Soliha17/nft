@@ -5,6 +5,7 @@ import About from './components/layout/about/Index';
 import Auction from './components/layout/auction/Index';
 import Category from './components/layout/category/Index';
 import Collection from './components/layout/collection/Index';
+import Create from './components/layout/create/Index';
 import Gallery from './components/layout/gallery/Index';
 
 import Hero from './components/layout/hero/Index';
@@ -19,7 +20,8 @@ function App() {
       <Gallery />
       <Category />
       <Auction />
-      <Seller/>
+      <Seller />
+      <Create/>
     </div>
   )
 }
