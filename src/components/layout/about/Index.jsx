@@ -7,7 +7,7 @@ import Bg2 from "../../../assets/images/bg-img-2.svg";
 import Bg3 from "../../../assets/images/bg-img-3.svg";
 import VideoPlay from "../../../assets/images/play-video-img.svg";
 
-const Section1 = () => {
+const About = () => {
   return (
     <section className="section section-1 container">
       <p className="section__subtitle">NFT Marketplace</p>
@@ -56,4 +56,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default About;

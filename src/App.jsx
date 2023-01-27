@@ -1,19 +1,21 @@
 import React from 'react';
 
 import "./App.scss";
+import About from './components/layout/about/Index';
+import Category from './components/layout/category/Index';
 import Collection from './components/layout/collection/Index';
 import Gallery from './components/layout/gallery/Index';
 
 import Hero from './components/layout/hero/Index';
-import Section1 from './components/layout/section1/Index';
 
 function App() {
   return (
     <div className='app'>
       <Hero />
-      <Section1 />
+      <About />
       <Collection />
-      <Gallery/>
+      <Gallery />
+      <Category/>
     </div>
   )
 }

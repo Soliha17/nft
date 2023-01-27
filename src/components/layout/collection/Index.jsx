@@ -11,9 +11,10 @@ import CardCollection from "../../molecules/CardCollection/Index";
 import { cardCollectionDatas } from "../../atoms/CardCollectionDatas";
 
 import UnderVectorIcon from "../../../assets/icons/under-icon.svg";
+import Button from "../../atoms/button/Index";
 
 const items = cardCollectionDatas.map(
-  ({ id, avt, galleryImg1, galleryImg2, galleryImg3, by, text,btn }) => {
+  ({ id, avt, galleryImg1, galleryImg2, galleryImg3, by, text, btn }) => {
     return (
       <CardCollection
         id={id}
@@ -57,7 +58,7 @@ const Collection = () => {
           },
         }}
       />
-      <button className="collection__btn font-style--1821">View All Category</button>
+      <Button />
     </section>
   );
 };
