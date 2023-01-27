@@ -8,6 +8,7 @@ import Collection from './components/layout/collection/Index';
 import Gallery from './components/layout/gallery/Index';
 
 import Hero from './components/layout/hero/Index';
+import Seller from './components/layout/seller/Index';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Collection />
       <Gallery />
       <Category />
-      <Auction/>
+      <Auction />
+      <Seller/>
     </div>
   )
 }

@@ -1,0 +1,26 @@
+.seller {
+  .section__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .section__title {
+    margin-bottom: 1rem;
+  }
+
+  .section__paragraph {
+    text-align: center;
+  }
+
+  .card-container__seller {
+    margin-top: 50px;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:1200px){
+   .card-container__seller {
+    justify-content: center;
+  }
+}

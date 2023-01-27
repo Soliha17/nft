@@ -8,7 +8,7 @@ import { cardAuctionDatas } from "../../mock/CardAuctionDatas";
 
 const Auction = () => {
   return (
-    <section className="section category container">
+    <section className="section auction container">
       <p className="section__subtitle">Live Auction</p>
       <h2 className="section__title">NFT Live Auction</h2>
       <div className="card-container__auction">
