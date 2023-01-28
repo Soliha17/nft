@@ -207,6 +207,7 @@
 @media (max-width: 1200px) {
   .roadmap {
     display: flex;
+    flex-direction: column;
   }
 
   .timeline::after {

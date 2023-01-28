@@ -11,6 +11,7 @@ import Gallery from './components/layout/gallery/Index';
 import Hero from './components/layout/hero/Index';
 import Roadmap from './components/layout/roadmap/Index';
 import Seller from './components/layout/seller/Index';
+import Testimonials from './components/layout/testimonials/Index';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       <Auction />
       <Seller />
       <Create />
-      <Roadmap/>
+      <Roadmap />
+      <Testimonials/>
     </div>
   )
 }
