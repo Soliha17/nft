@@ -9,6 +9,7 @@ import Create from './components/layout/create/Index';
 import Gallery from './components/layout/gallery/Index';
 
 import Hero from './components/layout/hero/Index';
+import Roadmap from './components/layout/roadmap/Index';
 import Seller from './components/layout/seller/Index';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <Category />
       <Auction />
       <Seller />
-      <Create/>
+      <Create />
+      <Roadmap/>
     </div>
   )
 }
