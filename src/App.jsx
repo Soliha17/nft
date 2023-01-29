@@ -2,6 +2,8 @@ import React from 'react';
 
 import "./App.scss";
 
+import ReactLoading from "react-loading";
+
 import ScrollToTop from "react-scroll-to-top";
 
 import About from './components/layout/about/Index';
@@ -21,6 +23,9 @@ import Testimonials from './components/layout/testimonials/Index';
 function App() {
   return (
     <div className="app">
+      const Example = ({(type, color)}) => (
+      <ReactLoading type={type} color={color} height={667} width={375} />
+      );
       <ScrollToTop />
       <Hero />
       <About />
