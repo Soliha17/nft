@@ -11,7 +11,7 @@ import IconC4 from "../../../assets/icons/4-icon-c.svg";
 
 const Create = () => {
   return (
-    <section className="create section container">
+    <section className="create section container" id='create'>
       <h2>Creat And Sell Your NFTs</h2>
 
       <div className="create-container">

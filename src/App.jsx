@@ -2,6 +2,8 @@ import React from 'react';
 
 import "./App.scss";
 
+import ScrollToTop from "react-scroll-to-top";
+
 import About from './components/layout/about/Index';
 import Auction from './components/layout/auction/Index';
 import Blog from './components/layout/blog/Index';
@@ -18,7 +20,8 @@ import Testimonials from './components/layout/testimonials/Index';
 
 function App() {
   return (
-    <div className='app'>
+    <div className="app">
+      <ScrollToTop />
       <Hero />
       <About />
       <Collection />
@@ -30,9 +33,9 @@ function App() {
       <Roadmap />
       <Testimonials />
       <Blog />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App

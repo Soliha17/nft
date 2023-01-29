@@ -16,7 +16,7 @@ const items = cardBlogDatas.map(({ id, img, date, title, text }) => {
 
 const Blog = () => {
   return (
-    <section className="blog section container">
+    <section className="blog section container" id="blog">
       <h2 className="section__title">Our Latest Blog</h2>
       <p className="section__paragraph">
         It has survived not only five centuries, but also the

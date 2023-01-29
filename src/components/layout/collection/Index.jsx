@@ -33,7 +33,7 @@ const items = cardCollectionDatas.map(
 
 const Collection = () => {
   return (
-    <section className="collection section container">
+    <section className="collection section container" id="collection">
       <p className="section__subtitle">Collection</p>
       <h2 className="section__title">
         NFT Collection{" "}

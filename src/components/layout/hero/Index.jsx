@@ -15,7 +15,7 @@ import Icon5 from "../../../assets/icons/hero-icon-5.svg";
 
 const Hero = () => {
   return (
-    <div className="hero-wrapper">
+    <div className="hero-wrapper" id="home">
       <div className="hero">
         <img
           className="math-shape"

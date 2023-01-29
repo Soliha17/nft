@@ -8,7 +8,7 @@ import "./style.scss";
 
 const Seller = () => {
   return (
-    <section className="section seller container">
+    <section className="section seller container" id="seller">
       <p className="section__subtitle"> Seller</p>
       <h2 className="section__title">
         NFT Best Seller <span>Last 7 Day</span>
