@@ -1,0 +1,17 @@
+.blog {
+  .section__title {
+    margin-bottom: 1rem;
+  }
+
+  .section__paragraph {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn,
+  .alice-carousel__play-btn,
+  .alice-carousel__dots {
+    display: none;
+  }
+}

@@ -11,6 +11,7 @@ import CardCollection from "../../molecules/CardCollection/Index";
 import { cardCollectionDatas } from "../../mock/CardCollectionDatas";
 
 import UnderVectorIcon from "../../../assets/icons/under-icon.svg";
+
 import Button from "../../atoms/button/Index";
 
 const items = cardCollectionDatas.map(
@@ -29,9 +30,10 @@ const items = cardCollectionDatas.map(
     );
   }
 );
+
 const Collection = () => {
   return (
-    <section className="collection container">
+    <section className="collection section container">
       <p className="section__subtitle">Collection</p>
       <h2 className="section__title">
         NFT Collection{" "}
@@ -40,10 +42,10 @@ const Collection = () => {
         </span>
       </h2>
       <AliceCarousel
-        // autoPlay
+        autoPlay
         autoPlayInterval={1500}
         mouseTracking
-        // infinite
+        infinite
         disableButtonsControls
         items={items}
         responsive={{
