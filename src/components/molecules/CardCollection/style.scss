@@ -7,10 +7,10 @@
   border: 0.5px solid #e3e3e3;
   box-shadow: 0px 0px 10px rgba(221, 221, 221, 0.5);
   cursor: pointer;
+  transition: 0.2s ease-in;
 
-  &:hover{
-    box-shadow: 0px 0px 30px #DDDDDD;
-    background: #000 !important;
+  &:hover {
+    box-shadow: 0px 0px 30px #dddddd;
   }
 
   display: flex;
@@ -51,13 +51,9 @@
     border-radius: 20px;
   }
 
-  .red--btn{
+  .red--btn {
     color: $white;
     background: $red;
     border-color: transparent;
   }
-}
-
-.card-collection:hover{
-  background: #000 !important;
 }
