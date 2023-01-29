@@ -8,6 +8,7 @@ import Blog from './components/layout/blog/Index';
 import Category from './components/layout/category/Index';
 import Collection from './components/layout/collection/Index';
 import Create from './components/layout/create/Index';
+import Footer from './components/layout/footer/Index';
 import Gallery from './components/layout/gallery/Index';
 
 import Hero from './components/layout/hero/Index';
@@ -28,7 +29,8 @@ function App() {
       <Create />
       <Roadmap />
       <Testimonials />
-      <Blog/>
+      <Blog />
+      <Footer/>
     </div>
   )
 }

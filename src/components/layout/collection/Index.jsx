@@ -18,7 +18,7 @@ const items = cardCollectionDatas.map(
   ({ id, avt, galleryImg1, galleryImg2, galleryImg3, by, text, btn }) => {
     return (
       <CardCollection
-        id={id}
+        key={id}
         avt={avt}
         galleryImg1={galleryImg1}
         galleryImg2={galleryImg2}

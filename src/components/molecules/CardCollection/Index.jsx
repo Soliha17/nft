@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import "./style.scss";
 
@@ -10,7 +10,7 @@ const CardCollection = ({
   galleryImg3,
   by,
   text,
-  btn
+  btn,
 }) => {
   return (
     <div className="card-collection">
@@ -41,4 +41,4 @@ const CardCollection = ({
   );
 };
 
-export default CardCollection
+export default CardCollection;

@@ -11,7 +11,7 @@ import { cardBlogDatas } from "../../mock/CardBlogDatas";
 import "./style.scss";
 
 const items = cardBlogDatas.map(({ id, img, date, title, text }) => {
-  return <CardBlog id={id} img={img} date={date} title={title} text={text} />;
+  return <CardBlog key={id} img={img} date={date} title={title} text={text} />;
 });
 
 const Blog = () => {
