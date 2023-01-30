@@ -1,5 +1,8 @@
 import React from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import "./style.scss";
 
 const CardCollection = ({
@@ -16,13 +19,13 @@ const CardCollection = ({
     <div className="card-collection">
       <div className="gallery__card-collection">
         <span>
-          <img src={galleryImg1} alt="galleryImg1" />
+          <LazyLoadImage effect="blur" src={galleryImg1} alt="galleryImg1" />
         </span>
         <span>
-          <img src={galleryImg2} alt="galleryImg2" />
+          <LazyLoadImage effect="blur" src={galleryImg2} alt="galleryImg2" />
         </span>
         <span>
-          <img src={galleryImg3} alt="galleryImg3" />
+          <LazyLoadImage effect="blur" src={galleryImg3} alt="galleryImg3" />
         </span>
       </div>
       <div className="info__card-collection">

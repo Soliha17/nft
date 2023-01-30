@@ -1,12 +1,15 @@
 import React from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import "./style.scss";
 
 const CardBlog = ({ img, date, title, text }) => {
   return (
     <div className="card-blog">
       <div className="img-group__card-blog">
-        <img src={img} alt="blog card" />
+        <LazyLoadImage effect="blur" src={img} alt="blog card" />
         <p className="font-style--1619">{date}</p>
       </div>
       <div className="info-group__card-blog">

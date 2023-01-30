@@ -16,8 +16,8 @@ const Testimonials = () => {
         It has survived not only five centuries, but also the leap into
         electronic typesetting, remaining essentially unchanged
       </p>
-      <div class="carousel">
-        <article class="carousel__slide carousel__slide--01">
+      <div className="carousel">
+        <article className="carousel__slide carousel__slide--01">
           <div className="testimonials__box">
             <div className="testimonials__left">
               <div className="testimonials__top">
@@ -137,11 +137,11 @@ const Testimonials = () => {
             </div>
           </div>
         </article>
-        <ul class="carousel__pager">
-          <li class="carousel__marker carousel__marker--01">Slide One</li>
-          <li class="carousel__marker carousel__marker--02">Slide Two</li>
-          <li class="carousel__marker carousel__marker--03">Slide Three</li>
-          <li class="carousel__marker carousel__marker--04">Slide Four</li>
+        <ul className="carousel__pager">
+          <li className="carousel__marker carousel__marker--01">Slide One</li>
+          <li className="carousel__marker carousel__marker--02">Slide Two</li>
+          <li className="carousel__marker carousel__marker--03">Slide Three</li>
+          <li className="carousel__marker carousel__marker--04">Slide Four</li>
         </ul>
       </div>
     </section>

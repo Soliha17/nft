@@ -1,5 +1,8 @@
 import React from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import "./style.scss";
 
 import RedFeed from "../../../assets/images/red-feed.png";
@@ -8,8 +11,17 @@ const CardAuction = ({img,avt,condition,name,username,cost}) => {
   return (
     <div className="auction-card">
       <div className="image-group__auction-card">
-        <img src={img} className="bg-img__auction-card" alt="bg auction card" />
-        <img src={RedFeed} className="feed-img__auction-card" alt="feed auction card" />
+        <LazyLoadImage
+          effect="blur"
+          src={img}
+          className="bg-img__auction-card"
+          alt="bg auction card"
+        />
+        <img
+          src={RedFeed}
+          className="feed-img__auction-card"
+          alt="feed auction card"
+        />
       </div>
       <div className="info-group__auction-card">
         <div className="top__info-group">
@@ -98,7 +110,7 @@ const CardAuction = ({img,avt,condition,name,username,cost}) => {
                 fill="#E27F84"
               />
             </svg>
-            <p className="font-style--1220">{condition }</p>
+            <p className="font-style--1220">{condition}</p>
           </span>
           <svg
             width="20"
@@ -117,16 +129,18 @@ const CardAuction = ({img,avt,condition,name,username,cost}) => {
           <div className="title__info-group">
             <img src={avt} alt="avatar card auction" />
             <span>
-              <h5 className="font-style--1625">{ name}</h5>
+              <h5 className="font-style--1625">{name}</h5>
               <p className="font-style--1220">{username}</p>
             </span>
           </div>
           <div className="cost__info-group">
             <p className="font-style--1225">Current Bid</p>
-            <h6 className="font-style--1620">{ cost}</h6>
+            <h6 className="font-style--1620">{cost}</h6>
           </div>
         </div>
-        <button className="btn__auction-card font-style--1619">Price Bid</button>
+        <button className="btn__auction-card font-style--1619">
+          Price Bid
+        </button>
       </div>
     </div>
   );

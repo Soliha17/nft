@@ -2,6 +2,9 @@ import React from "react";
 
 import "./style.scss";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import Bg1 from "../../../assets/images/bg-img-1.svg";
 import Bg2 from "../../../assets/images/bg-img-2.svg";
 import Bg3 from "../../../assets/images/bg-img-3.svg";
@@ -15,7 +18,12 @@ const About = () => {
 
       <div className="section-1__content">
         <div className="section-1__left">
-          <img className="bg-img-1" src={Bg1} alt="bg 1" />
+          <LazyLoadImage
+            effect="blur"
+            className="bg-img-1"
+            src={Bg1}
+            alt="bg 1"
+          />
           <img className="bg-img-2" src={Bg2} alt="bg 2" />
           <img className="bg-img-3" src={Bg3} alt="bg 3" />
           <img className="video-play" src={VideoPlay} alt="play video" />
@@ -37,7 +45,8 @@ const About = () => {
               except to obtain some advantage from it?
             </li>
             <li className="section-1__item font-style--1619">
-              Nam libero tempore, cum soluta nobis est eligendi optioas cumque...
+              Nam libero tempore, cum soluta nobis est eligendi optioas
+              cumque...
             </li>
             <li className="section-1__item font-style--1619">
               choice is untrammelled and when nothing prevents our being.

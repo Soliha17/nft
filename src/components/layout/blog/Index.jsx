@@ -1,7 +1,8 @@
 import React from "react";
 
-import AliceCarousel from "react-alice-carousel";
 
+
+import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 import CardBlog from "../../molecules/cardBlog/Index";
