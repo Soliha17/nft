@@ -12,7 +12,7 @@ import { cardCollectionDatas } from "../../mock/CardCollectionDatas";
 
 import UnderVectorIcon from "../../../assets/icons/under-icon.svg";
 
-import Button from "../../atoms/button/Index";
+import Button from "../../atoms/button/Button";
 
 const items = cardCollectionDatas.map(
   ({ id, avt, galleryImg1, galleryImg2, galleryImg3, by, text, btn }) => {
