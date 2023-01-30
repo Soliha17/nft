@@ -2,9 +2,6 @@ import React from "react";
 
 import "./style.scss";
 
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
-
 import Bg1 from "../../../assets/images/bg-img-1.svg";
 import Bg2 from "../../../assets/images/bg-img-2.svg";
 import Bg3 from "../../../assets/images/bg-img-3.svg";
@@ -18,12 +15,7 @@ const About = () => {
 
       <div className="section-1__content">
         <div className="section-1__left">
-          <LazyLoadImage
-            effect="blur"
-            className="bg-img-1"
-            src={Bg1}
-            alt="bg 1"
-          />
+          <img className="bg-img-1" src={Bg1} alt="bg 1" />
           <img className="bg-img-2" src={Bg2} alt="bg 2" />
           <img className="bg-img-3" src={Bg3} alt="bg 3" />
           <img className="video-play" src={VideoPlay} alt="play video" />

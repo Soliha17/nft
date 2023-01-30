@@ -14,7 +14,11 @@ import YoutubeIcon from "../../../assets/icons/youtube.svg";
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src={FooterBg1} className="shape-1__footer" alt="footer math shape" />
+      <img
+        src={FooterBg1}
+        className="shape-1__footer"
+        alt="footer math shape"
+      />
       <div className="footer__wrapper container">
         <div className="footer__content">
           <div className="footer__column footer__column--first">
@@ -140,10 +144,17 @@ const Footer = () => {
           </div>
         </div>
         <p className="copy__footer font-style--1823">
-          © Copyright 2023. Powered by <a href="https://t.me/solyadev">Solya</a>
+          © Copyright 2023. Powered by{" "}
+          <a rel="preconnect" href="https://t.me/solyadev">
+            Solya
+          </a>
         </p>
       </div>
-      <img src={FooterBg2} className="shape-2__footer" alt="footer cubic shape" />
+      <img
+        src={FooterBg2}
+        className="shape-2__footer"
+        alt="footer cubic shape"
+      />
     </footer>
   );
 };

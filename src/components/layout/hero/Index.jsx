@@ -4,7 +4,6 @@ import Header from "../header/Index";
 
 import "./style.scss";
 
-import MathShape from "../../../assets/images/math-shape.svg";
 import RedVector from "../../../assets/images/red-vector.svg";
 import WhiteVector from "../../../assets/images/white-vector.svg";
 import Icon1 from "../../../assets/icons/creative-icon.svg";
@@ -17,11 +16,6 @@ const Hero = () => {
   return (
     <div className="hero-wrapper" id="home">
       <div className="hero">
-        <img
-          className="math-shape"
-          src={MathShape}
-          alt="math background shape"
-        />
 
         <Header />
         <div className="hero__info">

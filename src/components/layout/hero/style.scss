@@ -22,14 +22,6 @@
   background-position: center;
   background-size: contain;
 
-  .math-shape {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    max-width: 344px;
-    height: 675px;
-  }
-
   .hero__info {
     position: relative;
     background: linear-gradient(
@@ -137,9 +129,6 @@
 }
 @media (max-width: 1500px) {
   .hero {
-    .math-shape {
-      display: none;
-    }
     .white-vector {
       left: 0% !important;
     }
