@@ -5,13 +5,13 @@ import "./style.scss";
 import PhotoAlbum from "react-photo-album";
 
 import {
-  FirtsCardCategoryPhotos,
+  FirstCardCategoryPhotos,
   SecondCardCategoryPhotos,
   ThirdCardCategoryPhotos,
   FourthCardCategoryPhotos,
   FifthCardCategoryPhotos,
   SixthCardCategoryPhotos,
-} from "../../mock/PhotosCardCategory";
+} from "../../mock/PhotosCardCategory.jsx";
 
 import NextIcon from "../../../assets/icons/next-icon.svg";
 
@@ -19,7 +19,7 @@ const CardCategory = () => {
   return (
     <div className="card-container__category">
       <div className="card__category">
-        <PhotoAlbum layout="rows" photos={FirtsCardCategoryPhotos} />
+        <PhotoAlbum layout="rows" photos={FirstCardCategoryPhotos} />
         <div className="card-info__category">
           <div className="card-title__category">
             <h4 className="font-style--2030">Art</h4>

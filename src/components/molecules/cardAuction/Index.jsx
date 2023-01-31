@@ -34,74 +34,74 @@ const CardAuction = ({img,avt,condition,name,username,cost}) => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M5.53365 3.29986L2.25385 3.10498V11.3876C2.25385 11.5868 2.34463 11.6666 2.53287 11.6666H5.72853L5.53365 3.29986Z"
                 fill="#C17D4F"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M14.3588 11.3876C14.3588 11.568 14.2747 11.6666 14.0798 11.6666H5.53369V3.10498H14.3588V11.3876Z"
                 fill="#CE9875"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M5.53367 3.29988H2.25387L0.323829 0.630156C0.235235 0.507266 0.277305 0.404297 0.440079 0.404297H7.82128L5.53367 3.29988Z"
                 fill="#C6865C"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M5.33765 3.29988H14.3587L16.2888 0.630156C16.3818 0.501719 16.3331 0.404297 16.1725 0.404297H7.43046L5.33765 3.29988Z"
                 fill="#C6865C"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M10.9007 3.29986V4.4426C10.9007 4.6142 10.7601 4.75482 10.5874 4.75482H8.83009C8.65845 4.75482 8.51782 4.61416 8.51782 4.4426V3.29986L9.94622 3.10498L10.9007 3.29986Z"
                 fill="#E27F84"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.51782 3.29988H10.9007L12.9935 0.404297H10.6106L8.51782 3.29988Z"
                 fill="#C9646D"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M5.53365 3.29988H4.55701L6.64978 0.404297H7.62642L5.53365 3.29988Z"
                 fill="#C17D4F"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M13.3821 3.29988H14.3587L16.2888 0.630156C16.3818 0.501719 16.3331 0.404297 16.1725 0.404297H15.197C15.3564 0.404297 15.4051 0.501719 15.3121 0.630156L13.3821 3.29988Z"
                 fill="#C17D4F"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M13.3821 3.29987H14.3588V6.25076H13.3821V3.29987Z"
                 fill="#C6865C"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.55701 3.29987H5.53365V11.6666H4.55701V3.29987Z"
                 fill="#B16E3D"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M14.3588 17.5862C17.6198 17.5862 20.2784 14.9276 20.2784 11.6666C20.2784 8.4067 17.6198 5.74698 14.3588 5.74698C11.0989 5.74698 8.43915 8.4067 8.43915 11.6666C8.43915 14.9275 11.0989 17.5862 14.3588 17.5862Z"
                 fill="#FFE07D"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M14.3588 5.74698C17.6286 5.74698 20.2784 8.39784 20.2784 11.6666C20.2784 14.9364 17.6286 17.5862 14.3588 17.5862C14.1949 17.5862 14.0322 17.5795 13.8705 17.5662C16.9111 17.3182 19.3018 14.7714 19.3018 11.6666C19.3018 8.56174 16.9111 6.01604 13.8705 5.76694C14.0322 5.75471 14.1949 5.74698 14.3588 5.74698Z"
                 fill="#FFD064"
               />

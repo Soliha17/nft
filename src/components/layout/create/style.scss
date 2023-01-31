@@ -11,26 +11,6 @@
       display: flex;
       gap: 30px;
       flex-wrap: wrap;
-
-      .create-card {
-        width: 243px;
-
-        img {
-          width: 80px;
-          margin-bottom: 20px;
-        }
-
-        h4 {
-          font-weight: 700;
-          color: $blue;
-          margin-bottom: 10px;
-        }
-
-        p {
-          color: $darkgrey;
-          text-transform: capitalize;
-        }
-      }
     }
 
     .create__right {

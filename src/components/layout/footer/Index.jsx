@@ -10,6 +10,8 @@ import InstagramIcon from "../../../assets/icons/instagram.svg";
 import PhoneIcon from "../../../assets/icons/phone.svg";
 import TwitterIcon from "../../../assets/icons/twitter.svg";
 import YoutubeIcon from "../../../assets/icons/youtube.svg";
+import FooterList from "../../molecules/listFooter/Index";
+import { firstFooterList, secondFooterList } from "../../mock/FooterListDatas";
 
 const Footer = () => {
   return (
@@ -97,22 +99,11 @@ const Footer = () => {
           </div>
           <div className="footer__column footer__column--second">
             <h3>Explore</h3>
-            <ul className="footer__list">
-              <li className="footer__item">My Account</li>
-              <li className="footer__item">Create Now</li>
-              <li className="footer__item">List a Item</li>
-              <li className="footer__item">Privacy Polocy</li>
-              <li className="footer__item">FAQs</li>
-            </ul>
+            <FooterList list={firstFooterList} />
           </div>
           <div className="footer__column footer__column--third">
             <h3>Marketplece</h3>
-            <ul className="footer__list">
-              <li className="footer__item">Art</li>
-              <li className="footer__item">Photo</li>
-              <li className="footer__item">Create a Store</li>
-              <li className="footer__item">Start Selling</li>
-            </ul>
+            <FooterList list={secondFooterList} />
           </div>
           <div className="footer__column footer__column--four">
             <h3>Newsletter</h3>

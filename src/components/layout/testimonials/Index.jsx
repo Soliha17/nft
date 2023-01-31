@@ -47,7 +47,7 @@ const Testimonials = () => {
             </div>
           </div>
         </article>
-        <article class="carousel__slide carousel__slide--02">
+        <article className="carousel__slide carousel__slide--02">
           <div className="testimonials__box">
             <div className="testimonials__left">
               <div className="testimonials__top">
@@ -77,7 +77,7 @@ const Testimonials = () => {
             </div>
           </div>
         </article>
-        <article class="carousel__slide carousel__slide--03">
+        <article className="carousel__slide carousel__slide--03">
           <div className="testimonials__box">
             <div className="testimonials__left">
               <div className="testimonials__top">
@@ -107,7 +107,7 @@ const Testimonials = () => {
             </div>
           </div>
         </article>
-        <article class="carousel__slide carousel__slide--04">
+        <article className="carousel__slide carousel__slide--04">
           <div className="testimonials__box">
             <div className="testimonials__left">
               <div className="testimonials__top">

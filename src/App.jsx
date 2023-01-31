@@ -31,8 +31,8 @@ function App() {
   return (
     <div className="app">
       {loading ? (
-        <div class="loader-container">
-          <div class="spinner"></div>
+        <div className="loader-container">
+          <div className="spinner"></div>
         </div>
       ) : (
         <>

@@ -1,6 +1,8 @@
 import React from 'react';
+
 import Button from '../../atoms/button/Button';
 import CardCategory from '../../molecules/CardCategory/Index';
+
 import "./style.scss";
 
 const Category = () => {

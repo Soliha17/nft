@@ -1,7 +1,8 @@
 import React from "react";
+import { boxTimelineDatas } from "../../mock/BoxTimelineDatas";
+import BoxTimeline from "../../molecules/boxTimeline/Index";
 
 import "./style.scss";
-
 
 const Roadmap = () => {
   return (
@@ -14,85 +15,16 @@ const Roadmap = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
         aliquet turpis elit elit natoque varius
       </p>
-      <div class="timeline">
-        <div class="box__timeline right">
-          <div class="date">apryl, 2020</div>
-          <div class="content">
-            <h2 className="font-style--2030">ICO Conducting</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Natoque
-              viverra eget.
-            </p>
-            <button className="btn__timeline font-style--1525">
-              read more
-            </button>
-          </div>
-        </div>
-        <div class="box__timeline left">
-          <div class="date">apryl, 2020</div>
-          <div class="content">
-            <h2 className="font-style--2030">Legal Review</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Natoque
-              viverra eget.
-            </p>
-            <button className="btn__timeline font-style--1525">
-              read more
-            </button>
-          </div>
-        </div>
-        <div class="box__timeline right">
-          <div class="date">apryl, 2020</div>
-          <div class="content">
-            <h2 className="font-style--2030">Trade Enquiries</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Natoque
-              viverra eget.
-            </p>
-            <button className="btn__timeline font-style--1525">
-              read more
-            </button>
-          </div>
-        </div>
-        <div class="box__timeline left">
-          <div class="date">apryl, 2020</div>
-          <div class="content">
-            <h2 className="font-style--2030">Platform Idea</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Natoque
-              viverra eget.
-            </p>
-            <button className="btn__timeline font-style--1525">
-              read more
-            </button>
-          </div>
-        </div>
-        <div class="box__timeline right">
-          <div class="date">apryl, 2020</div>
-          <div class="content">
-            <h2 className="font-style--2030">Project Idea</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Natoque
-              viverra eget.
-            </p>
-            <button className="btn__timeline font-style--1525">
-              read more
-            </button>
-          </div>
-        </div>
-        <div class="box__timeline left">
-          <div class="date">apryl, 2020</div>
-          <div class="content">
-            <h2 className="font-style--2030">Token Sale</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Natoque
-              viverra eget.
-            </p>
-            <button className="btn__timeline font-style--1525">
-              read more
-            </button>
-          </div>
-        </div>
+      <div className="timeline">
+        {boxTimelineDatas.map((item) => (
+          <BoxTimeline
+            key={item.id}
+            date={item.date}
+            title={item.title}
+            text={item.text}
+            condition={item.condition}
+          />
+        ))}
       </div>
     </section>
   );

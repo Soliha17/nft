@@ -39,82 +39,36 @@ const sixthCardCategoryPhotos = [
   { id: "NgLtdWk-6FI", width: 170, height: 188 },
   { id: "bKESVqfxass", width: 170, height: 158 },
 ];
+const mapCategoryPhotos = (categoryPhotos) =>
+  categoryPhotos.map((photo) => ({
+    src: unsplashLink(photo.id, photo.width, photo.height),
+    width: photo.width,
+    height: photo.height,
+    images: breakpoints.map((breakpoint) => {
+      const height = Math.round((photo.height / photo.width) * breakpoint);
+      return {
+        src: unsplashLink(photo.id, breakpoint, height),
+        width: breakpoint,
+        height,
+      };
+    }),
+  }));
 
-export const FirtsCardCategoryPhotos = firstCardCategoryPhotos.map((photo) => ({
-  src: unsplashLink(photo.id, photo.width, photo.height),
-  width: photo.width,
-  height: photo.height,
-  images: breakpoints.map((breakpoint) => {
-    const height = Math.round((photo.height / photo.width) * breakpoint);
-    return {
-      src: unsplashLink(photo.id, breakpoint, height),
-      width: breakpoint,
-      height,
-    };
-  }),
-}));
-export const SecondCardCategoryPhotos = secondCardCategoryPhotos.map((photo) => ({
-  src: unsplashLink(photo.id, photo.width, photo.height),
-  width: photo.width,
-  height: photo.height,
-  images: breakpoints.map((breakpoint) => {
-    const height = Math.round((photo.height / photo.width) * breakpoint);
-    return {
-      src: unsplashLink(photo.id, breakpoint, height),
-      width: breakpoint,
-      height,
-    };
-  }),
-}));
-export const ThirdCardCategoryPhotos = thirdCardCategoryPhotos.map((photo) => ({
-  src: unsplashLink(photo.id, photo.width, photo.height),
-  width: photo.width,
-  height: photo.height,
-  images: breakpoints.map((breakpoint) => {
-    const height = Math.round((photo.height / photo.width) * breakpoint);
-    return {
-      src: unsplashLink(photo.id, breakpoint, height),
-      width: breakpoint,
-      height,
-    };
-  }),
-}));
-export const FourthCardCategoryPhotos = fourthCardCategoryPhotos.map((photo) => ({
-  src: unsplashLink(photo.id, photo.width, photo.height),
-  width: photo.width,
-  height: photo.height,
-  images: breakpoints.map((breakpoint) => {
-    const height = Math.round((photo.height / photo.width) * breakpoint);
-    return {
-      src: unsplashLink(photo.id, breakpoint, height),
-      width: breakpoint,
-      height,
-    };
-  }),
-}));
-export const FifthCardCategoryPhotos = fifthCardCategoryPhotos.map((photo) => ({
-  src: unsplashLink(photo.id, photo.width, photo.height),
-  width: photo.width,
-  height: photo.height,
-  images: breakpoints.map((breakpoint) => {
-    const height = Math.round((photo.height / photo.width) * breakpoint);
-    return {
-      src: unsplashLink(photo.id, breakpoint, height),
-      width: breakpoint,
-      height,
-    };
-  }),
-}));
-export const SixthCardCategoryPhotos = sixthCardCategoryPhotos.map((photo) => ({
-  src: unsplashLink(photo.id, photo.width, photo.height),
-  width: photo.width,
-  height: photo.height,
-  images: breakpoints.map((breakpoint) => {
-    const height = Math.round((photo.height / photo.width) * breakpoint);
-    return {
-      src: unsplashLink(photo.id, breakpoint, height),
-      width: breakpoint,
-      height,
-    };
-  }),
-}));
+export const FirstCardCategoryPhotos = mapCategoryPhotos(
+  firstCardCategoryPhotos
+);
+export const SecondCardCategoryPhotos = mapCategoryPhotos(
+  secondCardCategoryPhotos
+);
+export const ThirdCardCategoryPhotos = mapCategoryPhotos(
+  thirdCardCategoryPhotos
+);
+export const FourthCardCategoryPhotos = mapCategoryPhotos(
+  fourthCardCategoryPhotos
+);
+export const FifthCardCategoryPhotos = mapCategoryPhotos(
+  fifthCardCategoryPhotos
+);
+export const SixthCardCategoryPhotos = mapCategoryPhotos(
+  sixthCardCategoryPhotos
+);
